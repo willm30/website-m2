@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    color: black
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    color: inherit;
+}
+
+body {
+    margin: 0rem;
+    padding: 0rem;
+    font-family: 'Noto Serif', serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.work ul {
+    padding: 0rem;
+}
+
+#root{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+:root {
+    --underline: 10px;
+}
+
+a:hover{
+    text-decoration-color: red;
+    text-decoration-style: double;
+}
+
+.heading {
+    font-size: 3rem;
+    margin-top: 5rem;
+    text-align: center;
+    text-decoration-line: underline;
+    text-underline-offset: var(--underline);
+    text-decoration-color: red;
+    text-decoration-style: double;
+    text-transform: capitalize;
+}
+
+body header h1 {
+    background-image: 
+    linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(74, 8, 2, 0) 100%),
+    linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(74, 8, 2, 0) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.9) 100%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%),
+    url("/splash.jpg");
+    margin-top: 5rem;
+}
+
+.main-heading {
+    font-size: 7rem;  
+    background-image: 
+    url("/splash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
+    border: 8px solid;
+    border-image-source: url("/splash.jpg");
+    border-image-slice: 1;
+    padding: 0rem 1rem;
+    white-space: nowrap;
+}
+
+.courses {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    text-align: center;
+}
